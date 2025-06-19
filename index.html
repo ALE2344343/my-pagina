@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diseño con Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa; /* Fondo gris claro */
+      padding: 40px; /* Espacio blanco alrededor del contenido */
+    }
+
+    .header, .footer {
+      background-color: #f72778;
+      color: black;
+      text-align: center;
+      padding: 30px;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 20px;
+    }
+
+    .content {
+      display: flex;
+      gap: 20px;
+    }
+
+    .content-left, .content-right {
+      flex: 1;
+      text-align: center;
+      padding: 30px;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 20px;
+      height: 100%;
+    }
+
+    .content-left {
+      background-color: #a7e2f0;
+    }
+
+    .content-right {
+      background-color: #d3d3d3;
+    }
+
+    .row {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="row">
+      <div class="col header">
+        MI PÁGINA
+      </div>
+    </div>
+
+    <!-- Contenido en dos columnas alineadas -->
+    <div class="row">
+      <div class="content">
+        <div class="content-left">
+          MATERIA: BASE DE DATOS I<br>
+          BDD - 200<br>
+          DOCENTE: ZENON CAYISALLA
+        </div>
+        <div class="content-right">
+          AULA: LAB INF III
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="row">
+      <div class="col footer">
+        WARA ALEJANDRA APAZA QUISPE
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
